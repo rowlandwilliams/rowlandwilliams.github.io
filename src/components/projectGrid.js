@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
-import carbon from './img/carbon.png'
+import Project from './project.js';
+import { projectData } from './projectData.js'
+
 
 const pMAX_WIDTH = 960
 // const pMAX_HEIGHT = 400
@@ -16,23 +18,30 @@ const ProjectGridContainer = styled.div`
   width: 100%`
 
 
-const ProjectGrid = () => (
-  <div style={{
-    marginBottom: 'calc(1.45rem + 83px',
-    maxWidth: pMAX_WIDTH + 'px',
-    maxHeight: pMAX_HEIGHT + 'px',
-    marginRight: 'auto',
-    marginLeft: 'auto'
-  }}
-  >
-    <ProjectContainer>
-      <Image src={carbon}></Image>
-      <Title>Carbon Explorer</Title>
-      <Desc>Design, Development</Desc>
-      <DescSub> A visual exploration of 500 years of atmospheric CO<sub>2</sub> data.</DescSub>
-    </ProjectContainer>
-  
-  </div>
-)
 
-export default Project
+  class ProjectGrid extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = projectData;
+    }
+  
+    render() {
+      return (
+        <div style={{
+          marginBottom: 'calc(1.45rem + 83px',
+          maxWidth: pMAX_WIDTH + 'px',
+          marginRight: 'auto',
+          marginLeft: 'auto'
+        }}>
+          <ProjectGridContainer>
+            {projectData.map(
+              project => (
+                <Project projectData = {this.state.project}/>
+              ))}
+          </ProjectGridContainer>
+        </div>
+      );
+    }
+  }
+
+export default ProjectGrid
