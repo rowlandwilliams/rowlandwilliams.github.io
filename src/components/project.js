@@ -41,23 +41,30 @@ const DescSub = styled.div`
 
 
 
-const Project = () => (
-  <div style={{
-    marginBottom: 'calc(1.45rem + 83px',
-    maxWidth: pMAX_WIDTH + 'px',
-    maxHeight: pMAX_HEIGHT + 'px',
-    marginRight: 'auto',
-    marginLeft: 'auto'
-  }}
-  >
-    <ProjectContainer>
-      <Image src={carbon}></Image>
-      <Title>Carbon Explorer</Title>
-      <Desc>Design, Development</Desc>
-      <DescSub> A visual exploration of 500 years of atmospheric CO<sub>2</sub> data.</DescSub>
-    </ProjectContainer>
+
+class Project extends React.Component {
+  render() {
+    return (
+    <div style={{
+      marginBottom: 'calc(1.45rem + 83px',
+      maxWidth: pMAX_WIDTH + 'px',
+      maxHeight: pMAX_HEIGHT + 'px',
+      marginRight: 'auto',
+      marginLeft: 'auto'
+    }}>
+      <ProjectContainer>
+        <Image src={carbon}></Image>
+        <Title>{this.props}</Title>
+        <Desc>{this}</Desc>
+        <DescSub> A visual exploration of 500 years of atmospheric CO<sub>2</sub> data.</DescSub>
+      </ProjectContainer>
+    
+    </div>
+    )
+  }
+}
+
   
-  </div>
-)
+
 
 export default Project

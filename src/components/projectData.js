@@ -1,18 +1,21 @@
 export const projectData = [
     {
-        img: './img/carbon.png',
+        name: 'suh',
+        img: 'img/carbon.png',
         title: 'Carbon Explorer',
         desc: 'Design, Development',
         descSub: 'A visual...'
     },
     {
-        img: './img/carbon.png',
+        name: 'suh dude',
+        img: '/img/carbon.png',
         title: 'Carbon Explorer',
         desc: 'Design, Development',
         descSub: 'A visual...'
     },
     {
-        img: './img/carbon.png',
+        name: 'jon',
+        img: '/img/carbon.png',
         title: 'Carbon Explorer',
         desc: 'Design, Development',
         descSub: 'A visual...'
