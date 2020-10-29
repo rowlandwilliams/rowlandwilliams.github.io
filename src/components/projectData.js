@@ -1,25 +1,28 @@
 export const projectData = [
     {
-        name: 'suh',
+        name: 'p1',
         img: 'img/carbon_explorer.gif',
-        title: 'CO2 Explorer',
+        url: 'https://rowlandwilliams.github.io/climate_visuals/',
+        title: 'CO<sub>2</sub> Explorer',
         desc: 'Design, Development',
-        descSub: 'A visual exploration of 500 years of Carbon Dioxide data.',
+        descSub: 'Interactive visualization of 500 years of Carbon Dioxide data.',
         stack: 'D3.js, Node.js'
     },
     {
-        name: 'Carbon Dioxide widget',
+        name: 'p2',
         img: '/img/carbon.png',
-        title: '',
-        desc: 'Design, Development',
-        descSub: 'Ongoing project with Matthew Shribman and Cambridge Zero. A widget displaying daily Carbon Dioxide levels to display on major news websites.',
+        title: 'Reporting Daily CO<sub>2</sub>',
+        desc: 'Data Research, Development',
+        descSub: 'Ongoing project with Matthew Shribman and Cambridge Zero. A widget showing daily Carbon Dioxide levels to display on major news websites.',
         stack: 'JS, PHP'
     },
     {
-        name: 'MATOPIBA: Brazil\'s new soy frontier',
-        img: '/img/carbon.png',
-        title: 'Carbon Explorer',
-        desc: 'Design, Development',
-        descSub: 'A visual...'
+        name: 'p3',
+        img: '/img/matopiba.gif',
+        url: 'https://medium.com/trase/matopiba-brazils-soy-frontier-9ad4cc6fe2d9',
+        title: 'MATOPIBA: Brazil\'s new soy frontier',
+        desc: 'Analysis, Visualization, Copy',
+        descSub: 'Visualization of the rapid expansion of soy exports from the Matopiba region of Brazil using data from trase.earth.',
+        stack: 'R'
     }
 ]
