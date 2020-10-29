@@ -23,6 +23,7 @@ const ProjectGridContainer = styled.div`
     flex-direction:row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start
   }
   `
 
@@ -30,8 +31,6 @@ const ProjectContainer = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 50px;
   top: 0;
   width: 90%;
@@ -75,9 +74,9 @@ const DescSub = styled.div`
             project => (
             <ProjectContainer key={project.name}>
               <Image src={project.img}></Image>
-              <Title>{project.name}</Title>
-              <Desc>Design, Development</Desc>
-              <DescSub> A visual exploration of 500 years of atmospheric CO<sub>2</sub> data.</DescSub>
+              <Title>{project.title}</Title>
+              <Desc>{project.desc}</Desc>
+              <DescSub>{project.descSub}</DescSub>
             </ProjectContainer>
             )
           )
