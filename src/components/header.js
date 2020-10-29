@@ -8,12 +8,12 @@ const HeaderContainer = styled.div`
   background-color: white;
   display: flex;
   justify-content: space-between;
-  
-  max-width: ${MAX_WIDTH}px;
+  align-items:center;
   padding: 1.45rem 1.0875rem;
+  max-width: ${MAX_WIDTH}px;
   position: fixed;
   top: 0;
-  width: 100%`
+  width: 90%;`
 
 const Name = styled.div`
   font-size: 22px;
@@ -26,19 +26,20 @@ const Desc = styled.div`
 
 
 const Header = () => (
-  <div style={{
-    marginBottom: 'calc(1.45rem + 40px',
-    maxWidth: MAX_WIDTH + 'px',
-    marginRight: 'auto',
-    marginLeft: 'auto'
-  }}
-  >
-    <HeaderContainer>
-      <Name>Rowland Williams</Name>
-      <Desc>Information Design</Desc>
-    </HeaderContainer>
   
-  </div>
+  <HeaderContainer>
+  <Name>Rowland Williams</Name>
+  <Desc>Information Design</Desc>
+  </HeaderContainer>
+ 
 )
 
 export default Header
+
+// <div
+//     style={{
+//       display: 'flex',  justifyContent:'center',
+//       alignItems:'center', maxWidth: MAX_WIDTH + 'px', 
+//       width: '90%'   
+//     }}
+//   >

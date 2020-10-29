@@ -1,17 +1,10 @@
-/* .Header {
-  text-align: left;
+.App {
+  text-align: center;
   display: flex;
-  flex-direction: row;
-  background-color: red;
-} */
-
-
-
-
-/* style={{backgroundColor: '#D0D0D0', flex:1, flexDirection: 'row', alignItems:'center',}} */
-
-
-
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .App-logo {
   height: 40vmin;
