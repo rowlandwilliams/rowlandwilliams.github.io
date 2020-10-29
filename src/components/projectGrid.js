@@ -4,12 +4,10 @@ import { projectData } from './projectData.js'
 import { device } from './breakpoints.js'
 
 const pgMAX_WIDTH = 960
-
 const pMAX_WIDTH = 350
 const pMAX_HEIGHT = 400
 
 const ProjectContainer = styled.div`
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +52,9 @@ const ProjectGridContainer = styled.div`
   }
   ${ProjectContainer}:nth-child(3) ${Image} {
     width: 80%;
+  }
+  ${ProjectContainer}:nth-child(2) ${Image} {
+    width: 90%;
   }
   `
 

@@ -10,7 +10,7 @@ export const projectData = [
     },
     {
         name: 'p2',
-        img: '/img/carbon.png',
+        img: '/img/widget.gif',
         title: 'Reporting Daily CO<sub>2</sub>',
         desc: 'Data Research, Development',
         descSub: 'Ongoing project with Matthew Shribman and Cambridge Zero. A widget showing daily Carbon Dioxide levels to display on major news websites.',

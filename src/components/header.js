@@ -17,11 +17,13 @@ const HeaderContainer = styled.div`
 
 const Name = styled.div`
   font-size: 22px;
-  font-weight: 600;`
+  font-weight: 550;
+  color: #0c0c0c`
 
 const Desc = styled.div`
   font-size: 22px;
-  font-weight: 300`
+  font-weight: 300;
+  color: #0c0c0c`
 
 const Header = () => (
   <HeaderContainer>
