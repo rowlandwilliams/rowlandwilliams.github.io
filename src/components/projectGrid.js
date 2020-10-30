@@ -72,6 +72,11 @@ const Desc = styled.div`
   font-size: 16px;
   font-weight: 300`
 
+const StackDesc = styled.div`
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 600`
+
 const DescSub = styled.div`
   font-size: 14px;
   font-weight: 200;
@@ -94,7 +99,7 @@ class ProjectGrid extends React.Component {
               <Title dangerouslySetInnerHTML={{__html: project.title}}></Title>
                 <DescLine>
                   <Desc>{project.desc}</Desc>
-                  <Desc>{project.stack}</Desc>
+                  <StackDesc>{project.stack}</StackDesc>
                 </DescLine>
               <DescSub>{project.descSub}</DescSub>
             </ProjectContainer>

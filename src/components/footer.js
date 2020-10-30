@@ -87,8 +87,9 @@ function cvIcon() {
              'justify-content': 'center',
              'text-decoration': 'none',
              'font-weight': '900'}}
-        href='https://orioniconlibrary.com/icon/github-6092'
+        href='./CV_RowlandWilliams.pdf'
         target='_blank'
+        download
     >
        <div style={{'display':'inline-block'}}>CV</div>
     </a>
