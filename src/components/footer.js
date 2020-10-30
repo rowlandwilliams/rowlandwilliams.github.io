@@ -20,7 +20,26 @@ const SocialIcon = styled.a`
     display: flex;
     justify-content: center;
     text-decoration: none;
+
+    :hover {
+        fill: black;
+    }
 `
+const CVIcon = styled.a`
+    margin-bottom: 5px;
+    background-color: #a3a3a3;
+    color: white;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 900;
+
+    :hover { 
+        background-color: black; 
+    }
+    `
+    
 
 const SocialIcons = styled.div`
   display: flex;
@@ -78,21 +97,13 @@ function linkedinIcon() {
 
 function cvIcon() {
     return (
-        <a 
-        style={{'margin-bottom': '5px',
-             'background-color': '#a3a3a3',
-             'color': 'white',
-             'width': '20px',
-             'display': 'flex',
-             'justify-content': 'center',
-             'text-decoration': 'none',
-             'font-weight': '900'}}
+        <CVIcon
         href='./CV_RowlandWilliams.pdf'
         target='_blank'
         download
-    >
-       <div style={{'display':'inline-block'}}>CV</div>
-    </a>
+        >
+            <div style={{'display':'inline-block'}}>CV</div>
+        </CVIcon>
     )
 }
 
