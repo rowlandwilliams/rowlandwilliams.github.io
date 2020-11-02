@@ -4,8 +4,7 @@ import { projectData } from './projectData.js'
 import { device } from './breakpoints.js'
 
 const pgMAX_WIDTH = 960
-const pMAX_WIDTH = 350
-const pMAX_HEIGHT = 400
+
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -92,7 +91,7 @@ class ProjectGrid extends React.Component {
             project => ( 
             <ProjectContainer key={project.name}>
              <ImageDiv>
-                <a className='imgLink' href={project.url} target="_blank">
+                <a className='imgLink' href={project.url} target="_blank" rel="noreferrer">
                   <Image src={project.img}></Image>
                 </a>
              </ImageDiv>
