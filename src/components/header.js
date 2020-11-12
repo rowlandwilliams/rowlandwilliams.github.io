@@ -15,6 +15,8 @@ const HeaderContainer = styled.div`
   top: 0;
   width: 90%;`
 
+
+
 const Name = styled.div`
   font-size: 22px;
   font-weight: 550;
@@ -26,11 +28,10 @@ const Desc = styled.div`
   color: #0c0c0c`
 
 const Header = () => (
-  <HeaderContainer>
-  <Name>Rowland Williams</Name>
-  <Desc>Code | Design</Desc>
-  </HeaderContainer>
- 
+    <HeaderContainer>
+    <Name>Rowland Williams</Name>
+    <Desc>Code | Design</Desc>
+    </HeaderContainer>
 )
 
 export default Header

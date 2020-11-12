@@ -26,14 +26,18 @@ const SocialIcon = styled.a`
     }
 `
 const CVIcon = styled.a`
-    margin-bottom: 5px;
+    margin: 0px 1px 5px 0px;
     background-color: #a3a3a3;
+    font-family: Dosis, sans-serif;
     color: white;
     width: 20px;
     display: flex;
     justify-content: center;
+    
     text-decoration: none;
     font-weight: 900;
+    font-size: 14px;
+    padding: 1px ;
 
     :hover { 
         background-color: black; 

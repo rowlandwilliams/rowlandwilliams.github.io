@@ -9,7 +9,7 @@ export const projectData = [
         stack: 'D3.js'
     },
     {
-        name: 'p1',
+        name: 'p2',
         img: 'img/carbon_explorer.gif',
         url: 'https://rowlandwilliams.github.io/climate_visuals/',
         title: 'CO<sub>2</sub> Explorer',
@@ -18,7 +18,7 @@ export const projectData = [
         stack: 'D3.js Node.js'
     },
     {
-        name: 'p2',
+        name: 'p3',
         img: 'img/widget.gif',
         title: 'Reporting Daily CO<sub>2</sub>',
         desc: 'Data Research, Development',
@@ -26,7 +26,7 @@ export const projectData = [
         stack: 'Sass JS PHP'
     },
     {
-        name: 'p3',
+        name: 'p4',
         img: 'img/matopiba.gif',
         url: 'https://medium.com/trase/matopiba-brazils-soy-frontier-9ad4cc6fe2d9',
         title: 'MATOPIBA: Brazil\'s new soy frontier',

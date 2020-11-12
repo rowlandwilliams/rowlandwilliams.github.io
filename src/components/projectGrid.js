@@ -42,7 +42,7 @@ const ProjectGridContainer = styled.div`
   max-width: ${pgMAX_WIDTH}px;
   top: 0;
   width: 90%;
-  padding-top: 100px;
+  padding-top: 40px;
   @media ${device.laptop} {
     flex-direction:row;
     justify-content: space-between;
