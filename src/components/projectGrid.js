@@ -60,7 +60,7 @@ const ProjectGridContainer = styled.div`
 const Title = styled.div`
   margin-top: 10px;
   font-size: 18px;
-  font-weight: 700;`
+  font-weight: 600;`
 
 const DescLine = styled.div`
   display:flex;
