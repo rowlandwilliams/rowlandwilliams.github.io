@@ -49,10 +49,10 @@ const ProjectGridContainer = styled.div`
     flex-wrap: wrap;
     align-items: flex-start
   }
-  ${ProjectContainer}:nth-child(4) ${Image} {
+  ${ProjectContainer}:nth-child(5) ${Image} {
     width: 80%;
   }
-  ${ProjectContainer}:nth-child(3) ${Image} {
+  ${ProjectContainer}:nth-child(4) ${Image} {
     width: 90%;
   }
   `
