@@ -2,11 +2,11 @@ export const projectData = [
     {
         name: 'p1',
         img: 'img/mswmap.gif',
-        url: 'https://rowlandwilliams.github.io/europesurfmap/',
+        url: 'https://europesurfmap.herokuapp.com/',
         title: 'European Wave Atlas',
-        desc: 'Data Scraping, Design, Development',
-        descSub: 'Interactive map of European surf spots. A voronoi tesselation is used to find the nearest wave to any location in Europe. Perfect for the land-locked surfer. Data scraped from Magicseaweed.',
-        stack: 'D3.js Leaflet Mapbox'
+        desc: 'Full-stack Development',
+        descSub: 'Interactive map of European surf spots. A voronoi tesselation is used to find the nearest wave to any location in Europe. Deployed on Heroku with a ClearDB MySQL database and Node/Express.js backend.',
+        stack: 'D3.js Leaflet Node.js MySQL'
     },
     {
         name: 'p2',
