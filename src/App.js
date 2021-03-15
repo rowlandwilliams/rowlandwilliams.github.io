@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./components/header.js";
-import Bio from "./components/bio.js";
+import Header from "./components/Header/Header";
+import Bio from "./components/Bio/Bio";
 
 import ProjectGrid from "./components/projectGrid";
 import Footer from "./components/footer.js";
@@ -10,8 +10,6 @@ function App() {
     <div className="App">
       <Header />
       <Bio />
-      <ProjectGrid />
-      <Footer />
     </div>
   );
 }

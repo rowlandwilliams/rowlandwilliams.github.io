@@ -1,0 +1,19 @@
+.hc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.45rem 1.0875rem;
+  max-width: 980px;
+  top: 0;
+  width: 90%;
+  font-size: 22px;
+  color: #0c0c0c;
+}
+
+.hc-name {
+  font-weight: 550;
+}
+
+.hc-sub {
+  font-weight: 300;
+}
