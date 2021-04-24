@@ -4,9 +4,9 @@ import "./styles.css";
 function Header() {
   return (
     <Fragment>
-      <div className="hc">
-        <div className="hc-name">Rowland Williams</div>
-        <div className="hc-sub">Code | Design</div>
+      <div className="c">
+        <div className="c-name">Rowland Williams</div>
+        <div className="c-sub">Code | Design</div>
       </div>
     </Fragment>
   );

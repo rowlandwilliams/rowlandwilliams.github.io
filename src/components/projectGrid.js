@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { projectData } from './projectData.js'
-import { device } from './breakpoints.js'
+import React from "react";
+import styled from "styled-components";
+import { projectData } from "./projectData.js";
+import { device } from "./breakpoints.js";
 
-const pgMAX_WIDTH = 960
-
+const pgMAX_WIDTH = 960;
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -16,27 +15,26 @@ const ProjectContainer = styled.div`
   @media ${device.laptop} {
     width: 47%;
   }
-  `
+`;
 
- const ImageDiv = styled.div`
+const ImageDiv = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 4px 0px rgba(120,118,120,1);
+  box-shadow: 0px 0px 4px 0px rgba(120, 118, 120, 1);
   border-radius: 4px;
- ` 
-
+`;
 
 const Image = styled.img`
   width 100%;
   height:260px;
   border-radius: 4px;
-  `
+  `;
 
 const ProjectGridContainer = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: ${pgMAX_WIDTH}px;
@@ -44,70 +42,73 @@ const ProjectGridContainer = styled.div`
   width: 90%;
   padding-top: 40px;
   @media ${device.laptop} {
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start
+    align-items: flex-start;
   }
-  ${ProjectContainer}:nth-child(5) ${Image} {
+  ${ProjectContainer}:nth-child(6) ${Image} {
     width: 80%;
   }
-  ${ProjectContainer}:nth-child(4) ${Image} {
+  ${ProjectContainer}:nth-child(5) ${Image} {
     width: 90%;
   }
-  `
+`;
 
 const Title = styled.div`
   margin-top: 10px;
   font-size: 18px;
-  font-weight: 600;`
+  font-weight: 600;
+`;
 
 const DescLine = styled.div`
-  display:flex;
+  display: flex;
   justify-content: space-between;
-`
+`;
 const Desc = styled.div`
   margin-top: 4px;
   font-size: 16px;
-  font-weight: 300`
+  font-weight: 300;
+`;
 
 const StackDesc = styled.div`
   margin-top: 4px;
   font-size: 16px;
-  font-weight: 600`
+  font-weight: 600;
+`;
 
 const DescSub = styled.div`
   font-size: 14px;
   font-weight: 200;
-  margin-top: 6px`
-
-
+  margin-top: 6px;
+`;
 
 class ProjectGrid extends React.Component {
-    render() {
-      return (
-        <ProjectGridContainer >
-          {projectData.map(
-            project => ( 
-            <ProjectContainer key={project.name}>
-             <ImageDiv>
-                <a className='imgLink' href={project.url} target="_blank" rel="noreferrer">
-                  <Image src={project.img}></Image>
-                </a>
-             </ImageDiv>
-              <Title dangerouslySetInnerHTML={{__html: project.title}}></Title>
-                <DescLine>
-                  <Desc>{project.desc}</Desc>
-                  <StackDesc>{project.stack}</StackDesc>
-                </DescLine>
-              <DescSub>{project.descSub}</DescSub>
-            </ProjectContainer>
-            )
-          )
-          }
-        </ProjectGridContainer>    
-      )
-    }
-  
+  render() {
+    return (
+      <ProjectGridContainer>
+        {projectData.map((project) => (
+          <ProjectContainer key={project.name}>
+            <ImageDiv>
+              <a
+                className="imgLink"
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image src={project.img}></Image>
+              </a>
+            </ImageDiv>
+            <Title dangerouslySetInnerHTML={{ __html: project.title }}></Title>
+            <DescLine>
+              <Desc>{project.desc}</Desc>
+              <StackDesc>{project.stack}</StackDesc>
+            </DescLine>
+            <DescSub>{project.descSub}</DescSub>
+          </ProjectContainer>
+        ))}
+      </ProjectGridContainer>
+    );
   }
-export default ProjectGrid
+}
+export default ProjectGrid;

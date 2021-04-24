@@ -10,6 +10,8 @@ function App() {
     <div className="App">
       <Header />
       <Bio />
+      <Footer />
+      <ProjectGrid />
     </div>
   );
 }

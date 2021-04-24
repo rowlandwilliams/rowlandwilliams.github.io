@@ -1,19 +1,25 @@
-.hc {
+.c {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1.45rem 1.0875rem;
+  padding: 10px 0;
   max-width: 980px;
   top: 0;
-  width: 90%;
+  width: 100%;
   font-size: 22px;
   color: #0c0c0c;
 }
 
-.hc-name {
+.c-name {
   font-weight: 550;
 }
 
-.hc-sub {
+.c-sub {
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .c {
+    max-width: 90%;
+  }
 }
