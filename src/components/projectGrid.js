@@ -51,7 +51,7 @@ const ProjectGridContainer = styled.div`
     width: 80%;
   }
   ${ProjectContainer}:nth-child(5) ${Image} {
-    width: 90%;
+    width: 100%;
   }
 `;
 

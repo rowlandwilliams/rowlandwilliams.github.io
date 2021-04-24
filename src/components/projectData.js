@@ -1,13 +1,13 @@
 export const projectData = [
   {
     name: "p1",
-    img: "img/mswmap.gif",
-    url: "https://europesurfmap.herokuapp.com/",
-    title: "European Wave Atlas",
+    img: "img/cycle.gif",
+    url: "https://cycle-map.herokuapp.com/",
+    title: "cycle-map",
     desc: "Full-stack Development",
     descSub:
-      "Interactive map of European surf spots. A voronoi tesselation is used to find the nearest wave to any location in Europe. Deployed on Heroku with a ClearDB MySQL database and Node/Express.js backend.",
-    stack: "D3.js Leaflet Node.js MySQL",
+      "3D visualisation of bike trips across central London",
+    stack: "React Redux deck-gl SVG Google Maps API",
   },
   {
     name: "p2",
@@ -16,8 +16,8 @@ export const projectData = [
     title: "European Wave Atlas",
     desc: "Full-stack Development",
     descSub:
-      "Interactive map of European surf spots. A voronoi tesselation is used to find the nearest wave to any location in Europe. Deployed on Heroku with a ClearDB MySQL database and Node/Express.js backend.",
-    stack: "D3.js Leaflet Node.js MySQL",
+      "Interactive map of European surf spots. A voronoi tesselation is used to find the nearest wave to any location in Europe.",
+    stack: "D3.js Leaflet MySQL",
   },
   {
     name: "p3",
@@ -36,17 +36,18 @@ export const projectData = [
     title: "CO<sub>2</sub> Explorer",
     desc: "Design, Development",
     descSub:
-      "Interactive visualization of 500 years of Carbon Dioxide data. Responsible for design and full-stack development. Curently working on an Express server that receives live data updates.",
-    stack: "D3.js Node.js",
+      "Interactive visualization of 500 years of atmospheric Carbon Dioxide data.",
+    stack: "D3.js",
   },
   {
     name: "p5",
     img: "img/widget.gif",
     title: "Reporting Daily CO<sub>2</sub>",
-    desc: "Data Research, Development",
+    url: "https://co2widget.com/",
+    desc: "Data Research, Front-end Development",
     descSub:
-      "Ongoing project with Matthew Shribman and Cambridge Zero. A widget showing daily Carbon Dioxide levels to display on major news websites. Front-end development.",
-    stack: "Sass JS PHP",
+      "Ongoing project with Matthew Shribman and Cambridge Zero. A widget showing daily atmospheric Carbon Dioxide levels to display on major news websites.",
+    stack: "SVG PHP",
   },
   {
     name: "p6",
