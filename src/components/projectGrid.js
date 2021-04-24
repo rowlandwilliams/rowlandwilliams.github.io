@@ -6,9 +6,6 @@ import { device } from "./breakpoints.js";
 const pgMAX_WIDTH = 960;
 
 const ProjectContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-bottom: 50px;
   top: 0;
   width: 90%;
